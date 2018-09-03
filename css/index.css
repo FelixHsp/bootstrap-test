@@ -5,6 +5,9 @@
 body{
     padding-top: 70px;
 }
+li{
+    list-style: none;
+}
 .navbar-left img{
     height: 50px;
     width: 225px;
@@ -22,4 +25,35 @@ body{
 }
 hr.divider{
     margin: 40px 0;
+}
+#container-footer{
+    width: 301px;
+    /*background: #2aabd2;*/
+    text-align: center;
+    font-size: 12px;
+}
+#container-footer ul{
+    width: 301px;
+}
+#container-footer li{
+    float: left;
+    padding:0 10px;
+    position: relative;
+}
+#container-footer li:nth-child(1){
+    padding-left: 0;
+}
+#container-footer li:nth-child(3)::after{
+    content: '';
+    width: 0;
+}
+#container-footer li::after{
+    content: '';
+    background: #6b6b6b;
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    right: -1px;
+    top:50%;
+    margin-top:-7px;
 }
