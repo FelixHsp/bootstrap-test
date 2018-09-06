@@ -70,6 +70,7 @@ hr.divider{
     margin-top: 10px;
 }
 #container-learn span{
+    margin-top: 6px;
     background:#d9534f;
     border-radius: 5px;
     color: white;
@@ -89,9 +90,8 @@ hr.divider{
         transform: rotate(360deg);
     }
 }
-.img-selected{
+.icon-selected{
+    color: white;
     animation: go 0.5s linear;
 }
-.iconfont{
-    font-size: 50px;
-}
+
