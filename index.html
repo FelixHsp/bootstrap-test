@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -7,14 +8,17 @@
     <link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
     <title></title>
 </head>
+
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -24,9 +28,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">十九大精神</a></li>
                         <li><a href="learnmore.html">新时代特色思想</a></li>
-                        <li><a href="#">新时代特色思想</a></li>
-                        <li><a href="#">新时代特色思想</a></li>
+                        <li><a href="#">社会主义核心价值观</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,14 +61,14 @@
         </a>
     </div>
     <!--<div class="container" id="imgwrapper">-->
-        <!--<div class="row">-->
-            <!--<div class="col-xs-4"><img src="imgs/新闻.png" alt="" width="60px" height="60px">-->
-            <!--<span>新时代</span></div>-->
-            <!--<div class="col-xs-4"><img src="imgs/政府.png" alt="" width="60px" height="60px">-->
-            <!--<span>十九大</span></div>-->
-            <!--<div class="col-xs-4"><img src="imgs/价值观.png" alt="" width="60px" height="60px">-->
-            <!--<span>核心价值观</span></div>-->
-        <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-xs-4"><img src="imgs/新闻.png" alt="" width="60px" height="60px">-->
+    <!--<span>新时代</span></div>-->
+    <!--<div class="col-xs-4"><img src="imgs/政府.png" alt="" width="60px" height="60px">-->
+    <!--<span>十九大</span></div>-->
+    <!--<div class="col-xs-4"><img src="imgs/价值观.png" alt="" width="60px" height="60px">-->
+    <!--<span>核心价值观</span></div>-->
+    <!--</div>-->
     <!--</div>-->
     <div class="container" id="words">
         <p>
@@ -76,7 +80,7 @@
         <ul>
             <li>
                 <div class="row">
-                    <div class="col-xs-4"><img src="imgs/新闻.png" alt="" width="50px" height="50px"></div>
+                    <div class="col-xs-4"><i class="iconfont icon-iconfontxingyexinwen"></i></div>
                     <div class="col-xs-8">新时代社会主义</div>
                 </div>
             </li>
@@ -84,13 +88,13 @@
             <li>
                 <div class="row">
                     <div class="col-xs-8">十九大精神</div>
-                    <div class="col-xs-4"><img src="imgs/政府.png" alt="" width="50px" height="50px"></div>
+                    <div class="col-xs-4"><i class="iconfont icon-xuexiao"></i></div>
                 </div>
             </li>
             <span class="hidden">党的十九大是一次不忘初心、牢记使命、高举旗帜、团结奋进的历史性盛会，极大地鼓舞了全党全国人民为实现中华民族伟大复兴的中国梦而奋斗的信心和力量，具有极其重大的历史意义。</span>
             <li>
                 <div class="row">
-                    <div class="col-xs-4"><img src="imgs/价值观.png" alt="" width="50px" height="50px"></div>
+                    <div class="col-xs-4"><i class="iconfont icon-light"></i></div>
                     <div class="col-xs-8">社会主义核心价值观</div>
                 </div>
             </li>
@@ -107,6 +111,7 @@
         </ul>
         <span>第三届全省大学生网络文化节</span>
     </div>
+    <script src="iconfont/iconfont.js"></script>
     <script src="common/jquery-2.1.1.min.js"></script>
     <script src="common/bootstrap/js/bootstrap.min.js"></script>
     <script>
@@ -114,20 +119,20 @@
         var aLi = oLearn.getElementsByTagName('li');
         var aImg = oLearn.getElementsByTagName('img');
         var aSpan = oLearn.getElementsByTagName('span');
-        for(var i=0; i<aLi.length; i++){
+        for (var i = 0; i < aLi.length; i++) {
             aLi[i].index = i;
-            aLi[i].onclick = function(){
-                for(var i=0; i<aLi.length; i++){
+            aLi[i].onclick = function () {
+                for (var i = 0; i < aLi.length; i++) {
                     aLi[i].className = '';
-                    aImg[i].className='';
-                    aSpan[i].className='hidden';
+                    aImg[i].className = '';
+                    aSpan[i].className = 'hidden';
                 }
                 this.className = 'selected';
-                aImg[this.index].className= 'img-selected';
-                aSpan[this.index].className=''
+                aImg[this.index].className = 'img-selected';
+                aSpan[this.index].className = ''
             };
         }
-
     </script>
 </body>
+
 </html>

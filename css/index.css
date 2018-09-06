@@ -92,3 +92,6 @@ hr.divider{
 .img-selected{
     animation: go 0.5s linear;
 }
+.iconfont{
+    font-size: 50px;
+}
