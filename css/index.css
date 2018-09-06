@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 li{
     list-style: none;
@@ -21,7 +21,8 @@ li{
     margin-left: 50px;
 }
 .carousel{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+
 }
 .carousel img{
     width: 100%;
@@ -119,4 +120,57 @@ hr.divider{
 }
 #box #div6{
     -webkit-transform:rotateX(-90deg) translateZ(10px);
+}
+#imgwrapper .col-xs-4{
+    position: relative;
+}
+#imgwrapper .col-xs-4 img{
+    position: absolute;
+    float: left;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#imgwrapper .col-xs-4 span{
+    position: relative;
+    top: 60px;
+}
+#imgwrapper{
+    font-size: 12px;
+    text-align: center;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+}
+#words{
+    margin-top: 80px;
+    background: #ccc;
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+    line-height: 25px;
+}
+#container-learn{
+}
+
+#container-learn .row{
+    line-height: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.selected{
+    background: orangered;
+    border-radius: 10px;
+    color: white;
+}
+@keyframes go {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.img-selected{
+    animation: go 0.5s linear;
 }
