@@ -75,11 +75,11 @@
             <!--<span>核心价值观</span></div>-->
         <!--</div>-->
     <!--</div>-->
-    <!--<div class="container" id="words">-->
-        <!--<p>-->
-            <!--当代是一个机遇与挑战并存的时代，身在校园，心系天下是我们青年大学生的高尚情怀。-->
-        <!--</p>-->
-    <!--</div>-->
+    <div class="container" id="words">
+        <p>
+            身在校园，心系天下是我们青年大学生的高尚情怀。
+        </p>
+    </div>
 
     <div class="container" id="container-learn">
         <ul>
@@ -89,18 +89,21 @@
                     <div class="col-xs-8">新时代社会主义</div>
                 </div>
             </li>
+            <span class="hidden">新时代中国特色社会主义思想是全党全国人民为实现中华民族伟大复兴而奋斗的行动指南。</span>
             <li>
                 <div class="row">
                     <div class="col-xs-8">十九大精神</div>
-                    <div class="col-xs-4"><img src="imgs/新闻.png" alt="" width="50px" height="50px"></div>
+                    <div class="col-xs-4"><img src="imgs/政府.png" alt="" width="50px" height="50px"></div>
                 </div>
             </li>
+            <span class="hidden">党的十九大是一次不忘初心、牢记使命、高举旗帜、团结奋进的历史性盛会，极大地鼓舞了全党全国人民为实现中华民族伟大复兴的中国梦而奋斗的信心和力量，具有极其重大的历史意义。</span>
             <li>
                 <div class="row">
-                    <div class="col-xs-4"><img src="imgs/新闻.png" alt="" width="50px" height="50px"></div>
+                    <div class="col-xs-4"><img src="imgs/价值观.png" alt="" width="50px" height="50px"></div>
                     <div class="col-xs-8">社会主义核心价值观</div>
                 </div>
             </li>
+            <span class="hidden">社会主义核心价值观是社会主义核心价值体系的内核，体现社会主义核心价值体系的根本性质和基本特征，反映社会主义核心价值体系的丰富内涵和实践要求，是社会主义核心价值体系的高度凝练和集中表达。</span>
         </ul>
     </div>
 
@@ -119,15 +122,18 @@
         var oLearn = document.getElementById('container-learn');
         var aLi = oLearn.getElementsByTagName('li');
         var aImg = oLearn.getElementsByTagName('img');
+        var aSpan = oLearn.getElementsByTagName('span');
         for(var i=0; i<aLi.length; i++){
             aLi[i].index = i;
             aLi[i].onclick = function(){
                 for(var i=0; i<aLi.length; i++){
                     aLi[i].className = '';
                     aImg[i].className='';
+                    aSpan[i].className='hidden';
                 }
                 this.className = 'selected';
-                aImg[this.index].className= 'img-selected'
+                aImg[this.index].className= 'img-selected';
+                aSpan[this.index].className=''
             };
         }
 
