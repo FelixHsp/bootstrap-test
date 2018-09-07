@@ -12,7 +12,9 @@
 }
 .carousel img{
     width: 100%;
+    height: auto;
 }
+
 #container-learn .col-md-4{
     text-align: center;
 }
@@ -56,6 +58,7 @@ hr.divider{
 }
 #container-learn{
     margin-top: 30px;
+    margin-bottom: -20px;
 }
 
 #container-learn .row{
@@ -76,6 +79,19 @@ hr.divider{
     display: block;
     text-align: center;
 }
+#container-learn .btn{
+    background: white;
+    width: 100px;
+    color: #d9534f;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#container-learn p{
+    height: 43px;
+}
 .selected{
     background:#d9534f;
     color: white;
@@ -89,9 +105,12 @@ hr.divider{
         transform: rotate(360deg);
     }
 }
-.img-selected{
+
+.icon-selected{
+    color: white;
     animation: go 0.5s linear;
 }
-.iconfont{
-    font-size: 50px;
+#xinwen,#light,#xuexiao{
+    font-size: 25px;
 }
+
