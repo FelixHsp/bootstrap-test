@@ -13,6 +13,11 @@
 </head>
 
 <body>
+<div class="container">
+    <div id="mark">
+        <img src="imgs/z.gif" alt="">
+    </div>
+</div>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="container-fluid">
@@ -127,6 +132,12 @@
     <script src="common/jquery-2.1.1.min.js"></script>
     <script src="common/bootstrap/js/bootstrap.min.js"></script>
      <script>
+         setTimeout(function () {
+             $('#mark').addClass('mark-out');
+             },2000);
+         setTimeout(function () {
+                 $('#mark').css('display','none');
+             },3500);
     </script>
     <script src="js/index.js"></script>
 </body>
